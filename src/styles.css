@@ -1,0 +1,31 @@
+
+.form-group label {
+    color: grey;
+  }
+
+  .form {
+    color: #3d8cc8;
+  }
+  
+  .form-group input {
+    font-weight: 500;
+  }
+  
+  .form-group input::placeholder {
+    color: #c0bdbd;
+    font-weight: 300;
+  }
+  
+  thead th{
+    font-weight: 400;
+  }
+  
+  table tbody tr:hover {
+    background-color: #59becd;
+    cursor: pointer;
+  }
+  
+  /*for invalid form controls*/
+  input.invalid {
+    border-color: red;
+  }

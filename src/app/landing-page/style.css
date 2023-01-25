@@ -1,0 +1,81 @@
+.body  {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+}
+
+.center {
+  margin: auto;
+  width: 40%;
+}
+
+.login {width: 60%;
+       float: left;
+       background-color: whitesmoke;
+       opacity: 0.6;
+       height: 1000px;
+
+       }
+
+.login h1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            float: right;
+            color : black;
+            padding: 5px;
+            font-size: 70px;
+            
+}
+
+.login h2 {
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: auto;
+            color : black;
+            padding: 5px;
+            font-size: 33px;
+            margin-top: 150px;
+            padding-left: 50px;
+}
+
+.register {
+        width: 40%;
+        float: right;
+        background-color:rgb(89, 172, 245);
+        height: 1000px;
+          }
+
+.register h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            float: left;
+            font-size: 70px;
+            color : white;
+            padding: 5px;
+
+}
+
+.register h2 {
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+              margin: auto;
+              color : white;
+              padding: 5px;
+              padding-left: 50px;
+              font-size: 43px;
+              margin-top: 145px;
+              width: 50%;
+}
+
+.login-button {margin: auto;
+               width: 30%;
+               padding: 15px;
+                height: 60px;}
+
+.register-button {margin: auto;
+                  width: 100%;
+                  color: black;
+                  background-color: white;
+                  border-radius: 10px;
+                  padding: 15px;
+                  height: 60px;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                  font-size: 25px;
+                  margin-top: 100px;
+                }

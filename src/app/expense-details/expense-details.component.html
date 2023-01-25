@@ -1,0 +1,56 @@
+<div class="header">
+    <h1>Expense tracker</h1>
+    <table class="table">
+        <tr class="tr">
+            <td> </td>
+            <td></td>
+            <td>Hello {{this.user}}!</td>
+            <td>Img</td>
+        </tr>
+    </table>
+</div>
+<body>
+<div class="income">
+    <h2>Income</h2>
+    <table class="expense-list">
+        <tr>
+            <th style="width:15%">Amount</th>
+            <th>Expense</th>
+            <th>Category</th>
+        </tr>
+        <tr *ngFor="let ed of service.list">
+            <td *ngIf="(ed.amount > 0)">{{ed.amount}}</td>
+            <td *ngIf="(ed.amount > 0)">{{ed.expenseName}}</td>
+            <td *ngIf="(ed.amount > 0)">{{ed.category}}</td>
+        </tr>
+    </table>
+</div>
+<div class="expense">
+    <h2>Expense</h2>
+    <table class="expense-list">
+    <tr>
+        <th style="width:15%">Amount</th>
+        <th>Expense</th>
+        <th>Date</th>
+    </tr>
+    <tr *ngFor="let ed of service.list">
+        <td *ngIf="(ed.amount < 0)">{{ed.amount}}</td>
+        <td *ngIf="(ed.amount < 0)">{{ed.expenseName}}</td>
+        <td *ngIf="(ed.amount < 0)">{{ed.category}}</td>
+    </tr>
+</table>
+</div>
+<div class="balance">
+    <h2>Balance : </h2>
+    <table class="expense-list">
+            <h5>Add new expense</h5>
+            <br>
+            <app-expense-details-form></app-expense-details-form>
+
+    </table>
+</div>
+
+</body>
+
+
+

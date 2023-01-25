@@ -1,0 +1,34 @@
+<form novalidate #form ="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+    <input type="hidden" name="expenseId" [value]="service.formData.expenseId" />
+    <div class="form-group">
+        <label>EXPENSE NAME</label>
+        <input class="form-control form-control-lg" placeholder="Expense Name" name="expenseName"
+            #expenseName="ngModel" [(ngModel)]="service.formData.expenseName"
+            required [class.invalid]="expenseName.invalid && expenseName.touched">
+    </div>
+    <div class="form-group">
+        <label>EXPENSE CATEGORY</label>
+        <input class="form-control form-control-lg" placeholder="Expense Category" name="category"
+            #category="ngModel" [(ngModel)]="service.formData.category"
+            required [class.invalid]="category.invalid && category.touched"
+        >
+    </div>
+    <div class="form-group">
+        <label>EXPENSE DESCRIPTION</label>
+        <input class="form-control form-control-lg" placeholder="Expense Description" name="Description"
+            #description="ngModel" [(ngModel)]="service.formData.description"
+            required [class.invalid]="description.invalid && description.touched"
+        >
+    </div>
+    <div class="form-group">
+        <label>EXPENSE AMOUNT</label>
+        <input class="form-control form-control-lg" placeholder="Expense Amount" name="Amount"
+            #amount="ngModel" [(ngModel)]="service.formData.amount"
+            required [class.invalid]="amount.invalid && amount.touched"
+        >
+    </div>
+    <div class="form-group">
+        <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
+    </div>
+
+</form>
